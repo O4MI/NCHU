@@ -7,7 +7,7 @@ fin = linspace(1e6,1e10,1e6);
 for i=1:size(jitter,2)
     SNR(i,:) = 20*log10(1./(2*pi*fin*jitter(i)));
 end
-%% Plot
+%% Plot SNR versus Fin
 clf
 semilogx(fin,SNR(6,:),'Displayname',' jitter = 10fs','color','b','LineWidth',2);
 hold on
